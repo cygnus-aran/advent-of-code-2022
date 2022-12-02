@@ -8,7 +8,7 @@ import {switchMap} from "rxjs";
 export class ApiService {
 
   constructor(private http: HttpClient) {  }
-  INPUT_URL = '/assets/inputs/';
+  INPUT_URL = '../assets/inputs/';
   loadInput(day: string) {
     return this.http.get(this.INPUT_URL + day + '.txt', {responseType: "text"});
   }
