@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {switchMap} from "rxjs";
 import {environment} from "../../environments/environment";
 
 @Injectable({
@@ -9,6 +8,7 @@ import {environment} from "../../environments/environment";
 export class ApiService {
 
   constructor(private http: HttpClient) {  }
+
   INPUT_URL = environment.assets_url + 'assets/inputs/';
   loadInput(day: string) {
     return this.http.get(this.INPUT_URL + day + '.txt', {responseType: "text"});
