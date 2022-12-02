@@ -1,0 +1,40 @@
+<div class="container-fluid p-4">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="title-day">Welcome to Day 1</h1>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h5>Take this big input and find the most calories</h5>
+      <textarea style="height: 12em">{{input}}</textarea>
+      <button class="btn-blue" (click)="showInput()">Solve Day 1</button>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <table class="table table-bordered" style="text-align: center" aria-describedby="tabla-elves">
+        <thead>
+        <tr>
+          <th scope="col">Biggest Elf</th>
+          <th scope="col">Sum of Biggest 3 Elves</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th>{{this.max[0]}}</th>
+          <th>{{this.max[0]+this.max[1]+this.max[2]}}</th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4" style="text-align: center">
+      <button class="btn-outline-blue" (click)="return()">Return Home</button>
+    </div>
+  </div>
+</div>
