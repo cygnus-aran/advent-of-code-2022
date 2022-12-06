@@ -8,12 +8,20 @@ import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './components/home/home/home.component';
 import {ApiService} from "./services/api.service";
 import {HttpClientModule} from "@angular/common/http";
+import { Day2Component } from './components/day2/day2.component';
+import { Day3Component } from './components/day3/day3.component';
+import { Day4Component } from './components/day4/day4.component';
+import { Day5Component } from './components/day5/day5.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Day1Component,
-    HomeComponent
+    HomeComponent,
+    Day2Component,
+    Day3Component,
+    Day4Component,
+    Day5Component
   ],
     imports: [
         BrowserModule,

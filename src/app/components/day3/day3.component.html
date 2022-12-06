@@ -1,0 +1,40 @@
+<div class="container-fluid p-4">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="title-day">Welcome to Day 3</h1>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <h5>Take this big input and find the repeated character and its value</h5>
+      <textarea style="height: 12em">{{input}}</textarea>
+      <button class="btn-blue" (click)="showMe()">Solve Day 3</button>
+    </div>
+  </div>
+  <div class="row p-4">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <table class="table table-bordered" style="text-align: center" aria-describedby="tabla-elves">
+        <thead>
+        <tr>
+          <th scope="col">Sum of priorities</th>
+          <th scope="col">Sum of elf groups</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th>{{this.sum}}</th>
+          <th>{{this.sum2}}</th>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4" style="text-align: center">
+      <button class="btn-outline-blue" (click)="return()">Return Home</button>
+    </div>
+  </div>
+</div>
