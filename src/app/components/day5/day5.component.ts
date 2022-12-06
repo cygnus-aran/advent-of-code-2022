@@ -17,8 +17,8 @@ export class Day5Component implements OnInit {
   matrix: string[][] = [[]];
   matrix2: string[][] = [[]];
   instructions: string[] = [];
-  topOfEach: string = '';
-  topOfEach9001: string = '';
+  topOfEach: string = '--';
+  topOfEach9001: string = '--';
 
 
   constructor(private api: ApiService, private router: Router) { }
